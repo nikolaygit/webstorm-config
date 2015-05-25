@@ -1,0 +1,610 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templateSet group="JavsScript - Express.js">
+  <template name="getr" value="get($ROUTE$, function(req, res, next) {&#10;  $END$&#10;});" description="get(ROUTE, func(){}) - express" toReformat="true" toShortenFQNames="true">
+    <variable name="ROUTE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="Python" value="false" />
+      <option name="Django" value="false" />
+      <option name="SQL" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="HAML" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="vardb" value="var db = mongoskin.db('mongodb://@localhost:27017/test', {safe:true});&#10;var id = mongoskin.helper.toObjectID;&#10;" description="var db = mongoskin... - node.js" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="Python" value="false" />
+      <option name="Django" value="false" />
+      <option name="SQL" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="HAML" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="set" value="$VAR$.set($NAME$, $VALUE$);" description="var.set(NAME, VALUE); - express" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="Python" value="false" />
+      <option name="Django" value="false" />
+      <option name="SQL" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="HAML" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="update" value="update(&#10;  {$ID$},&#10;  $ADDPARAMS$function(error, resultCount){&#10;    if (error) {&#10;      return next(error);$CHECK$&#10;    }&#10;    $END$&#10;  });" description="update(obj, func(error, item){}); - mongoskin" toReformat="false" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ADDPARAMS" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CHECK" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="Python" value="false" />
+      <option name="Django" value="false" />
+      <option name="SQL" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="HAML" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="upid" value="updateById($ID$, {$set: $OBJ$}, function(error, count){&#10;  if (error) {&#10;    return next(error);$CHECK$&#10;  }&#10;  res.send({affectedCount: count});$CODE$&#10;});" description="updateById(obj, func(error, item){});" toReformat="false" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="OBJ" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CHECK" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CODE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="CSS_DECLARATION_BLOCK" value="true" />
+    </context>
+  </template>
+  <template name="se" value="send($VAR$);" description="send(); - node.js" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="Python" value="false" />
+      <option name="Django" value="false" />
+      <option name="SQL" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="HAML" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="reqst" value="var express = require('express');&#10;var bodyParser = require('body-parser');&#10;var logger = require('morgan');" description="require(STANDARD) - node.js" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="Python" value="false" />
+      <option name="Django" value="false" />
+      <option name="SQL" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="HAML" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="req" value="var $NAME$ = require('$NAME$');&#10;" description="require - node.js" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="Python" value="false" />
+      <option name="Django" value="false" />
+      <option name="SQL" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="HAML" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="reply" value="reply($VAR$);" description="reply() - hapi.js" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="Python" value="false" />
+      <option name="Django" value="false" />
+      <option name="SQL" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="HAML" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="red" value="redirect('$NAME$');" description="redirect - node.js" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="Python" value="false" />
+      <option name="Django" value="false" />
+      <option name="SQL" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="HAML" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="remove" value="remove(&#10;  {_id: $ID$},$ADDPARAMS$&#10;  function(error, resultCount){&#10;    if (error) {&#10;      return next(error);$CHECK$&#10;    }&#10;    $END$&#10;  });" description="remove(obj, func(error, resultCount){}); - mongoskin" toReformat="false" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ADDPARAMS" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CHECK" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="Python" value="false" />
+      <option name="Django" value="false" />
+      <option name="SQL" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="HAML" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="remid" value="removeById($ID$, function(error, count){&#10;  if (error) {&#10;    return next(error);$CHECK$&#10;  }&#10;  res.send({affectedCount: count});$CODE$&#10;});" description="removeById(obj, func(error, item){});" toReformat="false" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CHECK" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CODE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="Python" value="false" />
+      <option name="Django" value="false" />
+      <option name="SQL" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="HAML" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="rall" value="app.all('$ROUTE$', function(req, res) {&#10;  $CODE$&#10;});" description="app.all('$ROUTE$', function(req, res) {});- express" toReformat="false" toShortenFQNames="true">
+    <variable name="ROUTE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CODE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="Python" value="false" />
+      <option name="Django" value="false" />
+      <option name="SQL" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="HAML" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="r" value="require('$NAME$')" description="require - node.js" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="Python" value="false" />
+      <option name="Django" value="false" />
+      <option name="SQL" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="HAML" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="putr" value="put($ROUTE$, function(req, res, next) {&#10;  $END$&#10;});" description="put(ROUTE, func(){}) - express" toReformat="true" toShortenFQNames="true">
+    <variable name="ROUTE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="Python" value="false" />
+      <option name="Django" value="false" />
+      <option name="SQL" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="HAML" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="postr" value="post($ROUTE$, function(req, res, next) {&#10;  $END$&#10;});" description="post(ROUTE, func(){}) - express" toReformat="true" toShortenFQNames="true">
+    <variable name="ROUTE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="Python" value="false" />
+      <option name="Django" value="false" />
+      <option name="SQL" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="HAML" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="param" value="param('$VAR$', function(req, res, next, $VAR$){&#10;  $END$&#10;  return next();&#10;});" description="app.param(VAR, func(){}) - express" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="Python" value="false" />
+      <option name="Django" value="false" />
+      <option name="SQL" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="HAML" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="next" value="next($VAR$);" description="next(); - node.js" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="Python" value="false" />
+      <option name="Django" value="false" />
+      <option name="SQL" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="HAML" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="ne" value="next($VAR$);" description="next(); - node.js" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="Python" value="false" />
+      <option name="Django" value="false" />
+      <option name="SQL" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="HAML" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="mos" value="mongoskin" description="mongoskin - node.js" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="CSS_DECLARATION_BLOCK" value="true" />
+    </context>
+  </template>
+  <template name="listen" value="listen($PORT$, function(){&#10;  $CODE$&#10;});" description="listen(port, func(){}) - express" toReformat="false" toShortenFQNames="true">
+    <variable name="PORT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CODE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="Python" value="false" />
+      <option name="Django" value="false" />
+      <option name="SQL" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="HAML" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="hrou" value="{&#10;  method: '$METHOD$',&#10;  path: $PATH$,&#10;  handler: function(req, reply) {&#10;    $END$&#10;  }&#10;}" description="route - hapi.js" toReformat="false" toShortenFQNames="true">
+    <variable name="METHOD" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PATH" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="Python" value="false" />
+      <option name="Django" value="false" />
+      <option name="SQL" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="HAML" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="delr" value="del($ROUTE$, function(req, res, next) {&#10;  $END$&#10;});" description="del(ROUTE, func(){}) - express" toReformat="true" toShortenFQNames="true">
+    <variable name="ROUTE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="Python" value="false" />
+      <option name="Django" value="false" />
+      <option name="SQL" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="HAML" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="appust" value="app.use(bodyParser.urlencoded());&#10;app.use(bodyParser.json());&#10;app.use(logger());" description="app.use(STANDARD) - node.js" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="Python" value="false" />
+      <option name="Django" value="false" />
+      <option name="SQL" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="HAML" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="appuf" value="app.use(function(req, res, next) {&#10;  $CODE$&#10;});" description="app.use(function(){}) - node.js" toReformat="false" toShortenFQNames="true">
+    <variable name="CODE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="Python" value="false" />
+      <option name="Django" value="false" />
+      <option name="SQL" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="HAML" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="appu" value="app.use($VAR$);" description="app.use() - node.js" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="Python" value="false" />
+      <option name="Django" value="false" />
+      <option name="SQL" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="HAML" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="appg" value="app.get('$URL$', $ROUTE$);" description="app.get('URL', ROUTE);- node.js" toReformat="false" toShortenFQNames="true">
+    <variable name="URL" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ROUTE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="Python" value="false" />
+      <option name="Django" value="false" />
+      <option name="SQL" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="HAML" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="appp" value="app.post('$URL$', $ROUTE$);" description="app.post('URL', ROUTE);- node.js" toReformat="false" toShortenFQNames="true">
+    <variable name="URL" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ROUTE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="Python" value="false" />
+      <option name="Django" value="false" />
+      <option name="SQL" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="HAML" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="redi" value="redirect('$VAR$');" description="redirect('VAR'); - express" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="Python" value="false" />
+      <option name="Django" value="false" />
+      <option name="SQL" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="HAML" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="broadc" value="socket.broadcast.emit('$MSG$', {$OBJ$});" description="socket.broadcast.emit('_MSG_', {}); - socket.io" toReformat="false" toShortenFQNames="true">
+    <variable name="MSG" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="OBJ" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="Python" value="false" />
+      <option name="Django" value="false" />
+      <option name="SQL" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="HAML" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="emit" value="socket.emit('$MSG$', {$OBJ$});" description="socket.emit('_MSG_', {}); - socket.io" toReformat="false" toShortenFQNames="true">
+    <variable name="MSG" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="OBJ" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="Python" value="false" />
+      <option name="Django" value="false" />
+      <option name="SQL" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="HAML" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+</templateSet>
+

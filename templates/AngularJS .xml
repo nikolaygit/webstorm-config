@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templateSet group="AngularJS ">
+  <template name="ngmc" value="var $moduleName$ = angular.module('$moduleName$',[$moduleDeps$], function($configDeps$){&#10;    $END$&#10;});" description="A new angular module with a config function" toReformat="true" toShortenFQNames="true">
+    <variable name="moduleName" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="moduleDeps" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="configDeps" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="ngca" value="var $controllerName$ = function($scope, $injectables$) {&#10;  $END$&#10;} " description="Define a new Angular Controller. You can change the controller name and parameters." toReformat="true" toShortenFQNames="true">
+    <variable name="controllerName" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="injectables" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="bb" value="{{$binding$}}$END$" description="A binding in AngularJS" toReformat="true" toShortenFQNames="true">
+    <variable name="binding" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="ngcf" value="$APP$.config(function($injectables$) {&#10;  $END$&#10;});" description="Define a Angular config" toReformat="true" toShortenFQNames="true">
+    <variable name="APP" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="injectables" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="ngc" value="$app$.controller('$NAME$', function($scope, $injectables$) {&#10;  $END$&#10;});" description="Define a new Angular Controller. You can change the controller name and parameters." toReformat="true" toShortenFQNames="true">
+    <variable name="app" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="injectables" expression="" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="s" value="$scope." description="$scope." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="ngwh" value="when('$url$', {&#10;    templateUrl: '$templateUrl$', &#10;    controller: '$controller$'&#10;});&#10;$END$" description="Defines a when condition of an AngularJS route." toReformat="true" toShortenFQNames="true">
+    <variable name="url" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="templateUrl" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="controller" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="f" value="| " description="filter |" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="otherw" value="otherwise({&#10;    redirectTo: '$END$'&#10;});" description="otherwise - routing AngularJS" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="ngcm" value="'use strict';&#10;&#10;/**&#10; * @ngdoc function&#10; * @name $MODULE$.controller:$NAME$&#10; * @description&#10; * # $NAME$&#10; * Controller of ...&#10; */&#10;angular.module('$MODULE$')&#10;  .controller('$NAME$', function($scope, $injectables$) {&#10;    $END$&#10;  });" description="Define a new Angular Controller. You can change the controller name and parameters." toReformat="true" toShortenFQNames="true">
+    <variable name="MODULE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="injectables" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="ngdm" value="'use strict';&#10;&#10;/**&#10; * @ngdoc function&#10; * @name $MODULE$.directive:$NAME$&#10; * @description&#10; * # $NAME$&#10; * Controller of ...&#10; */&#10;angular.module('$MODULE$')&#10;  .directive('$NAME$', function($injectables$) {&#10;    var linker = function(scope,element,attrs) {&#10;      $END$&#10;    };&#10;    &#10;    return {&#10;      restrict:'$RESTRICT$',&#10;      link: linker&#10;    };&#10;  });" description="Define a new Angular Directive" toReformat="true" toShortenFQNames="true">
+    <variable name="MODULE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="injectables" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="RESTRICT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="ngm" value="(function() {&#10;  'use strict';&#10;  &#10;  angular.module('$moduleName$', [&#10;&#10;  /* Angular dependencies */&#10;  $END$&#10;  &#10;  /* shared dependencies */&#10;  &#10;  &#10;  /* Feature dependencies */&#10;  &#10;  &#10;  ]);&#10;})();" description="New angular module." toReformat="true" toShortenFQNames="true">
+    <variable name="moduleName" expression="" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="ngr" value="(function() {&#10;  'use strict';&#10;  &#10;  angular.module('$moduleName$')&#10;    .config(function($routeProvider) {&#10;      $routeProvider&#10;        .when('$url$', {&#10;          templateUrl: '$templateUrl$',&#10;          controller: '$controller$'&#10;        })&#10;        .otherwise({&#10;          redirectTo: '/'&#10;        });&#10;  });&#10;  &#10;})();" description="Angular Router" toReformat="true" toShortenFQNames="true">
+    <variable name="url" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="templateUrl" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="controller" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="moduleName" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+</templateSet>
+
